@@ -160,8 +160,8 @@
     
     p {
       margin-bottom: 2rem;
-      line-height: 2;
-      color: #7f8c8d;
+      line-height: 1.5;
+      color: #000000;
     }
     
     .wrapper {
@@ -183,14 +183,42 @@
     }
     
     a{
+      font-size: 13px;
       color: black;
       text-decoration:none
     }
 
     a:hover{
-      color: rgb(53, 53, 255);
+      color: rgb(7, 230, 255);
       text-decoration:none
     }
+
+    /* From Uiverse.io by ErzenXz */ 
+button {
+  position: relative;
+  width: fit-content;
+  min-width: 100px;
+  height: 45px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 2.5px solid #E0E1E4;
+  box-shadow: 0px 0px 20px -20px;
+  cursor: pointer;
+  background-color: white;
+  transition: all 0.2s ease-in-out 0ms;
+  user-select: none;
+  font-family: 'Poppins', sans-serif;
+  left: 450px;
+}
+
+button:hover {
+  background-color: #F2F2F2;
+  box-shadow: 0px 0px 20px -18px;
+}
+
+button:active {
+  transform: scale(0.95);
+}
 
     /* Sticky Header Style */
     /* ---------------------------------------- */
@@ -227,37 +255,34 @@
 
 <body translate="no" class="">
   <header>
-    <h1></h1> <!---網頁最頂端--->
-    <h3></h3> <!--底下的標語-->
+    <h1>Home page</h1> <!---網頁最頂端--->
+    <h3>introduce myself</h3> <!--底下的標語-->
     <nav>
-      <a href="#"></a> <!--Nav bar上面的的文字-->
-      <a href="#"></a> <!--Nav bar上面的的文字-->
-      <a href="#"></a> <!--Nav bar上面的的文字-->
-      <a href="#"></a> <!--Nav bar上面的的文字-->
+      <a href="index.html">Home</a> <!--Nav bar上面的的文字-->
+      <a href="about.html">About</a> <!--Nav bar上面的的文字-->
     </nav>
   </header>
   <div class="wrapper">
     <section id="steezy">
-      <h2> 簡介</h2>
-      <p>專門分享我的數學解題or研究，可能偶爾會放些其他的(?)</p>
-      <p></p>
-      </section>
-
-    <section id="real1">
-      <h2>數論</h2>
-      <br>1.數論常用基本技巧<a href='https://whale-math.github.io/math/FirstToNumberTheory.pdf'>點此進入<a></br>
-
-      </section>
-      <section id="real1">
-      <h2>幾何</h2>
-      <br>1.九點圓深探<a href='https://whale-math.github.io/nine_points_circle.pdf'>點此進入<a></br>
-      <br>2.反演變換<a href='math/Inversion.pdf'>點此進入<a></br>
-      </section>
-      <section id="real1">
-      <h2>Mocks</h2>
-      <br>平常自己練習的模擬考</br>
-      <br>1. 2023/4/2 ： <a href='MOCK1_APMO_RULE_.pdf'>MOCK1_APMO_RULE</a></br>
-      </section>
+      <h2>Header</h2>
+      <p>Name: Tse Yu/ 陳澤宇</p>
+      <p>Personality:</p>
+      <img src="">
+      <h2>Contact:</h2>
+      <p>Telephone: 0920147213</p>
+      <p>Email: tychen2022@gmail.com</p>
+      <h2>About</h2>
+      <p>I am a passionate and multi-talented student with a strong foundation in science, innovation, and leadership. As a member of the prestigious science class at the National Experimental High School at Hsinchu Science Park, I have excelled in academics, demonstrated through achievements such as perfect scores in chemistry examinations and high-level experimental problem-solving in physics. My versatility extends beyond academics—I’ve led groups in acapella and sports, organized international exchange programs, and actively contributed to community service and education initiatives. My ability to combine analytical thinking with creativity and empathy enables me to excel in team-oriented environments, whether in scientific exploration, leadership roles, or collaborative pursuits.</p> <!--內文-->
+      <button>
+        <a href="extra-curriculum.html">Learn more</a>
+      </button>
+      <button>
+        <a href="#">Explore My Art</a>
+      </button>
+      <button>
+        <a href="#">Watch Videos</a>
+      </button>
+    </section>
   </div>
 <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
 
@@ -266,7 +291,7 @@
 $(function () {
   $(window).scroll(function () {
     var winTop = $(window).scrollTop();
-    if (winTop >= 30) {
+    if (winTop >= 3) {
       $("body").addClass("sticky-header");
     } else {
       $("body").removeClass("sticky-header");

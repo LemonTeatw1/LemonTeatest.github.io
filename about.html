@@ -157,9 +157,10 @@ h2 {
 }
 
 p {
+  font-size: 22px;
   margin-bottom: 0.8rem;
-  line-height: 0.8;
-  color: #7f8c8d;
+  line-height: 1.5;
+  color: #000000;
 }
 
 .wrapper {
@@ -182,6 +183,7 @@ section {
 
 /* From Uiverse.io by ErzenXz */ 
 button {
+  position: relative;
   width: fit-content;
   min-width: 100px;
   height: 45px;
@@ -194,6 +196,7 @@ button {
   transition: all 0.2s ease-in-out 0ms;
   user-select: none;
   font-family: 'Poppins', sans-serif;
+  left: 450px;
 }
 
 button:hover {
@@ -253,84 +256,24 @@ body.sticky-header header h1 {
     <h1>owo</h1> <!---網頁最頂端--->
     <h3>owo</h3> <!--底下的標語-->
     <nav>
-      <a href="#">a</a> <!--Navbar上的文字-->
-      <a href="#">a</a> <!--Navbar上的文字-->
-      <a href="#">a</a> <!--Navbar上的文字-->
-      <a href="#">a</a> <!--Navbar上的文字-->
+      <a href="index.html">Home</a> <!--Navbar上的文字-->
+      <a href="about.html">About</a> <!--Navbar上的文字-->
     </nav>
   </header>
   <div class="wrapper">
     <section id="steezy">
-      <h2></h2> <!--格字裡的標題-->
-      <p></p> <!--底下的標語-->
-      <p></p> <!--底下的標語-->
-      <p></p>
-      <a></a> <!--內文-->
-      <p></p>
+      <h2>About me</h2> <!--格字裡的標題-->
+      <p>I am a passionate and multi-talented student with a strong foundation in science, innovation, and leadership. As a member of the prestigious science class at the National Experimental High School at Hsinchu Science Park, I have excelled in academics, demonstrated through achievements such as perfect scores in chemistry examinations and high-level experimental problem-solving in physics. My versatility extends beyond academics—I’ve led groups in acapella and sports, organized international exchange programs, and actively contributed to community service and education initiatives. My ability to combine analytical thinking with creativity and empathy enables me to excel in team-oriented environments, whether in scientific exploration, leadership roles, or collaborative pursuits.</p> <!--內文-->
       <button>
-        <a href="example.html">click me</a>
+        <a href="#">Learn more</a>
+      </button>
+      <button>
+        <a href="#">Explore My Art</a>
+      </button>
+      <button>
+        <a href="#">Watch Videos</a>
       </button>
     </section>
-    <section id="perform">
-      <h2></h2> <!--格字裡的標題-->
-      <table>
-  <tr>
-    <th>競賽/檢定項目</th>
-    <th><br>成績</br></th>
-  </tr>
-        <tr>
-    <td><br>2022 TRML</br></td>
-    <td><br>團體全國銀牌</br></td>
-        </tr>
-  <tr>
-    <td><br><a href='https://hackmd.io/@Whale120/APCS202210'>2022 10月APCS</a></br></td>
-    <td><br>觀念/實作：4/4</br></td>
-        </tr>
-        <tr>
-    <td><br>第56屆全國數學奧林匹克 &nbsp; &nbsp; &nbsp; &nbsp;</br></td>
-    <td><br>團體/個人：前30%/金牌</br></td>
-        </tr> 
-        <tr>
-          <td><br><a href='https://nzqrcode.blogspot.com/2022/12/issc-2022.html'>2022 ISSC</a></br></td>
-    <td><br>團體第九名</br></td>
-        </tr>
-        <tr>
-          <td><br>2023 成大邀請賽</br></td>
-    <td><br>佳作</br></td>
-        </tr>
-</table>
-        </section>
-    
-    <section id="perform">
-      <h2>營隊活動</h2>
-      <table>
-  <tr>
-    <th>活動名稱</th>
-  </tr>
-        <tr>
-    <td><br><a href='https://nzqrcode.blogspot.com/2022/08/imoc-2022.html'>2022 IMOC</a></br></td>
-          
-        </tr>
-        <tr>
-          <td><br><a href='https://nzqrcode.blogspot.com/2022/08/apcsc.html'>2022 APCSCAMP</a></br></td>
-   
-        </tr> 
-  <tr>
-    <td><br><a href='https://nzqrcode.blogspot.com/2023/02/apmoctmo2023.html'>2023 APMOC</a></br></td>
-  
-        </tr>
-        <tr>
-          <td><br>2023 IMOC</br></td>
-        </tr> 
-         <tr>
-          <td><br>2023 AIS3 JUNIOR</br></td>
-        </tr> 
-</table>
-        </section>
-
-        <section id="perform">
-          <h2></h2> <!--格字裡的標題--> 
-        </section>
   </div>
 
     
@@ -342,7 +285,7 @@ body.sticky-header header h1 {
 $(function () {
   $(window).scroll(function () {
     var winTop = $(window).scrollTop();
-    if (winTop >= 30) {
+    if (winTop >= 1) {
       $("body").addClass("sticky-header");
     } else {
       $("body").removeClass("sticky-header");
